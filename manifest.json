@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Custom New Tab",
+  "version": "1.0",
+  "description": "Replace the default New Tab page with a custom page.",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "icons": {
+    "16": "icon.svg",
+    "48": "icon.svg",
+    "128": "icon.svg"
+  },
+  "permissions": [
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*/"
+  ],
+  "action": {
+    "default_title": "Custom New Tab"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "chrome_url_overrides": {
+    "newtab": "custom.html"
+  }
+}
