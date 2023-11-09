@@ -1,7 +1,7 @@
 # glowing-engine
 A fun Chrome Extension side project to change the default Chrome default New Tab page with a custom HTML page. 
 
-![Screenshot](https://github.com/juandaishere/glowing-engine/assets/94457118/e2532753-419d-4413-97b4-9ee9c72048f0)
+![Screenshot](https://github.com/juandaishere/glowing-engine/assets/94457118/79028d7e-0bea-4ba5-bea8-e0342175f680)
 
 # Install guide:
 1. Download the entire repository into a single directory (or simply clone it).
