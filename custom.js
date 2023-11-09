@@ -32,5 +32,18 @@ setInterval(updateTime, 30000);
 function searchGoogle() {
   var query = document.getElementById("searchBox").value;
   var googleSearchUrl = "https://www.google.com/search?q=" + encodeURIComponent(query);
-  window.location.href = googleSearchUrl;
+
+  // Get the current tab's ID
+  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+      // Update the URL of the current tab
+      chrome.tabs.update(tabs[0].id, { url: googleSearchUrl });
+  });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('searchForm');
+  form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      searchGoogle();
+  });
+});

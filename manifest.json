@@ -12,6 +12,9 @@
     "128": "icon.svg"
   },
   "permissions": [
+    "tabs"
+  ] ,
+    "permissions": [
     "scripting"
   ],
   "host_permissions": [
