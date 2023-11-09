@@ -25,6 +25,7 @@
       font-size: 60px;
       font-weight: bold;
       color: #d8d8d8;
+      margin-bottom: 20px;
     }
 
     #links {
@@ -38,18 +39,30 @@
       text-decoration: none;
       margin: 0 5px;
     }
+
+    #searchBox {
+      font-family: "Cascadia Code PL", monospace;
+      width: 250px;
+      max-width: 400px;
+      height: 25px;
+      border-radius: 10px;
+      border: none;
+      background-color: #646770;
+      color: #d8d8d8;
+      padding-left: 10px;
+    }
+
+    input::placeholder {
+    color: #d8d8d8;
+    }
   </style>
 </head>
 <body>
   <div id="greeting"></div>
   <div id="time"></div>
-  <br>
-  <div id="links">
-    <a href="https://mail.google.com">gmail</a>
-    <a href="https://youtube.com">youtube</a>
-    <a href="https://photos.google.com">photos</a>
-    <a href="https://web.whatsapp.com">whatsapp</a>
-    <a href="https://open.spotify.com">spotify</a>
+  </div>
+    <form onsubmit="searchGoogle(); return false;">
+      <input type="text" id="searchBox" name="searchBox" placeholder="google search">
   </div>
   <script src="custom.js"></script>
 </body>

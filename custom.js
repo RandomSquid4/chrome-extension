@@ -28,3 +28,9 @@ updateTime(); // Update the time and greeting immediately
 
 // Update the time and greeting every half minute
 setInterval(updateTime, 30000);
+
+function searchGoogle() {
+  var query = document.getElementById("searchBox").value;
+  var googleSearchUrl = "https://www.google.com/search?q=" + encodeURIComponent(query);
+  window.location.href = googleSearchUrl;
+}
