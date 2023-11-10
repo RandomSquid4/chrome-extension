@@ -6,5 +6,5 @@ A fun Chrome Extension side project to change the default Chrome default New Tab
 # Install guide:
 1. Download the entire repository into a single directory (or simply clone it).
 2. In Chrome's extensions settings, activate "Developer mode".
-3. Choose the location into which you downloaded all of the files by clicking "Load unpacked".
+3. Click "Load unpacked", and choose the repository directory on your system.
 4. Done!
